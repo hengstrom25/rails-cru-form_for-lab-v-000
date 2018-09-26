@@ -19,7 +19,12 @@ class ArtistsController < ApplicationController
   def edit
     @artist = Artist.find(params[:id])
     @artist.save
-    redirect_to artist_path(artist)
+    redirect_to artist_path(@artist)
+  end
+  
+  def update
+    
+  end
   
   
   
