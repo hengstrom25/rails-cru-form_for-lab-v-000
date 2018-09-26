@@ -17,7 +17,7 @@ class ArtistsController < ApplicationController
   end
   
   def edit
-    
+    @artist = Artist
   end
   
   def update
