@@ -8,4 +8,12 @@ class ArtistController < ApplicationController
     @artist = Artist(params[:id])
   end
   
+  def new
+    @artist = Artist.new
+  end
+  
+  def create
+    @artist = Artist.new
+    
+  
 end
