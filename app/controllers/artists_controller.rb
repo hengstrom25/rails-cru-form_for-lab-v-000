@@ -17,15 +17,14 @@ class ArtistsController < ApplicationController
   end
   
   def edit
+    
+  end
+  
+  def update
     @artist = Artist.find(params[:id])
     @artist.save
     redirect_to artist_path(@artist)
   end
-  
-  def update
-    
-  end
-  
   
   
   def artist_params
